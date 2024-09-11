@@ -1,4 +1,4 @@
-FROM ubuntu:stable-slim
+FROM debian:stable-slim
 
 LABEL "com.github.actions.name"="GitHub Action for SCSS Compiling"
 LABEL "com.github.actions.description"="An action to compile SCSS to CSS with Sass"
