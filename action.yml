@@ -3,7 +3,7 @@ inputs:
     description: 'Path to source SCSS file'
     required: true
     default: './scss/style.scss'
-  octocat-eye-color:
+  destination:
     description: 'Output path for CSS build'
     required: true
     default: './style.css'
