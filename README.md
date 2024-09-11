@@ -14,7 +14,7 @@ jobs:
 
       - name: Compile CSS from SCSS files
         uses: yalo-dev/github-action-scss-compile@main
-        env:
+        with:
           source: ./sass/style.scss
           destination: ./style.css
 ```
