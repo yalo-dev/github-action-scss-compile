@@ -1,9 +1,15 @@
+name: 'Compile SCSS to CSS'
+description: 'GitHub Action to compile SCSS to CSS with Sass'
+
 inputs:
   source:
-    description: 'Path to source SCSS file'
+    description: 'Relative path to SASS or SCSS file, eg. ./scss/style.scss'
     required: true
-    default: './scss/style.scss'
+
   destination:
-    description: 'Output path for CSS build'
+    description: 'Path compiled CSS should be saved, eg. ./style.css'
     required: true
-    default: './style.css'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
