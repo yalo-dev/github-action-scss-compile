@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/yalo-dev/github-action-scss-compile"
 LABEL "maintainer"="YaloDevOps <devops@digitalyalo.com>"
 
 RUN apt-get update 
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs && npm
 
 ADD build_css.sh /build_css.sh
 ENTRYPOINT ["/build_css.sh"]
