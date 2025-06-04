@@ -1,14 +1,14 @@
-name: 'Compile SCSS to CSS'
-description: 'GitHub Action to compile SCSS to CSS with Sass'
+name: 'Compile Gulp'
+description: 'GitHub Action to compile Gulpfile'
 
 inputs:
   source:
-    description: 'Relative path to SASS or SCSS file, eg. ./scss/style.scss'
-    required: true
+    description: 'UNUSED - Relative path to SASS or SCSS file, eg. ./scss/style.scss'
+    required: false
 
   destination:
-    description: 'Path compiled CSS should be saved, eg. ./style.css'
-    required: true
+    description: 'UNUSED - Path compiled CSS should be saved, eg. ./style.css'
+    required: false
 
 runs:
   using: 'docker'

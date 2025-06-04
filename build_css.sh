@@ -1,9 +1,9 @@
 #!/bin/sh -l
 
-echo "Installing Sass"
-npm install -g sass
+echo "NPM Install"
+npm install
 
-echo "Build SCSS"
-sass $1 $2
+echo "Build Gulp"
+npm run build
 
 ls -a

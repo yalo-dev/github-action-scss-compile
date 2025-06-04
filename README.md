@@ -1,6 +1,6 @@
 # github-action-scss-compile
-Build SCSS files on push to Github
-
+~~Build SCSS files on push to Github~~
+This version uses gulp and `npm run build` instead of SASS
 ## Example GitHub Action workflow
 
 ```
@@ -14,7 +14,5 @@ jobs:
 
       - name: Compile CSS from SCSS files
         uses: yalo-dev/github-action-scss-compile@main
-        with:
-          source: ./sass/style.scss
-          destination: ./style.css
+        
 ```
